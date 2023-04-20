@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-container {
+  @apply max-w-7xl mx-auto px-10 text-center;
+}
+
+body {
+  /* Background color is the lightGray that is in the tailwind config */
+  background-color: #e5e5e5;
+}
