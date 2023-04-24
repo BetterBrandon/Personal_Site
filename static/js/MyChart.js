@@ -1,4 +1,5 @@
 const Chart = require("chart.js/auto");
+Chart.defaults.font.size = 16;
 
 class MyChart {
   #is_language_chart = true;

@@ -14771,10 +14771,19 @@ language_button.addEventListener("click", function () {
   c.createLanguageChart();
 });
 
+frame_button.addEventListener("click", function () {
+  c.createFrameChart();
+});
+
 console.log("Script is working");
+
+window.onload = () => {
+  c.createLanguageChart();
+};
 
 },{"./MyChart.js":6,"./test.js":8}],6:[function(require,module,exports){
 const Chart = require("chart.js/auto");
+Chart.defaults.font.size = 16;
 
 class MyChart {
   #is_language_chart = true;

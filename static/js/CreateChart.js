@@ -19,4 +19,12 @@ language_button.addEventListener("click", function () {
   c.createLanguageChart();
 });
 
+frame_button.addEventListener("click", function () {
+  c.createFrameChart();
+});
+
 console.log("Script is working");
+
+window.onload = () => {
+  c.createLanguageChart();
+};
