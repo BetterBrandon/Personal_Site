@@ -537,11 +537,6 @@ video {
   margin-right: auto;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -555,6 +550,14 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-20 {
@@ -577,12 +580,8 @@ video {
   height: 12rem;
 }
 
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-4\/5 {
-  width: 80%;
+.w-40 {
+  width: 10rem;
 }
 
 .w-48 {
@@ -593,8 +592,8 @@ video {
   width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
 .flex-row {
@@ -720,5 +719,12 @@ body {
 @media (min-width: 768px) {
   .md\:flex-col {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
