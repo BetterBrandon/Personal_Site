@@ -15,7 +15,7 @@
 
 <body>
     <header class="">
-        <img src="images/test.jpg" alt="" class="relative max-w-screen-2xl xl:mx-auto">
+        <img src="images/test.jpg" alt="" class="relative xl:max-w-screen-2xl xl:mx-auto">
         <section class="absolute top-20 right-10">
             <p class="text-black font-bold text-2xl">Hey there, my name is</p>
             <h1 class=" text-7xl font-black italic">
@@ -110,8 +110,9 @@
 
         </div>
         <!-- Chart -->
-        <div style="width: 800px;">
-            <canvas id="chart"></canvas>
+        <!-- style="width: 800px;" -->
+        <div class="mx-auto">
+            <canvas id="chart" class="w-full"></canvas>
         </div>
     </section>
 
@@ -120,8 +121,7 @@
 
     </footer>
 
-
-    <script type="module" src="src/CreateChart.js"></script>
+    <script type="module" src="/js/bundle.js"></script>
 </body>
 
 </html>

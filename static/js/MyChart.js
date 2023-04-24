@@ -1,6 +1,6 @@
-import Chart from "chart.js/auto";
+const Chart = require("chart.js/auto");
 
-export class MyChart {
+class MyChart {
   #is_language_chart = true;
   #data;
 
@@ -38,7 +38,7 @@ export class MyChart {
 
   #current_chart;
 
-  #options() {
+  options() {
     return {
       type: "bar",
       data: this.#is_language_chart
@@ -113,8 +113,8 @@ export class MyChart {
     this.#is_language_chart = true;
 
     this.#current_chart = new Chart(
-      document.getElementById("acquisitions"),
-      this.#options()
+      document.getElementById("chart"),
+      this.options()
     );
   }
 
@@ -130,8 +130,9 @@ export class MyChart {
 
     console.log(this.#is_language_chart);
     this.#current_chart = new Chart(
-      document.getElementById("acquisitions"),
-      this.#options()
+      document.getElementById("chart"),
+      this.options()
     );
   }
 }
+module.exports = MyChart;
