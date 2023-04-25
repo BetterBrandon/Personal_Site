@@ -7,7 +7,8 @@ module.exports = {
         sans: ["Raleway", "sans-serif"],
       },
       colors: {
-        navy: "#14213d",
+        // #14213d
+        navy: "#2c406d",
         lightGray: "#e5e5e5",
         yellowOrange: "#fca311",
       },
