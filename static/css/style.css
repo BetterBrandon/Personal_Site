@@ -780,6 +780,19 @@ video {
   }
 }
 
+.reveal {
+  /* @apply relative translate-y-[150px] opacity-0 duration-200 ease-in transition-all; */
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 body {
   /* Background color is the lightGray that is in the tailwind config */
   background-color: #e5e5e5;
