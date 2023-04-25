@@ -14,9 +14,10 @@
 </head>
 
 <body>
-    <header class="">
-        <img src="images/test.jpg" alt="" class="relative xl:max-w-screen-2xl xl:mx-auto">
-        <section class="absolute top-20 right-10">
+    <header class="lg:mx-auto lg:max-w-xl">
+        <img src=" images/test.jpg" alt="" class="relative ">
+        <section class=" absolute top-20 right-10">
+            <!-- text-2xl -->
             <p class="text-black font-bold text-2xl">Hey there, my name is</p>
             <h1 class=" text-7xl font-black italic">
                 Brandon Bisceglia
@@ -116,9 +117,27 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="mt-40 pb-20 ">
+        <section class="max-w-7xl mx-auto md:px-10 text-center border-black border-4 border-solid px-0">
+            <p class="text-center text-xl mt-10 px-2">Thank you taking a glance at my website. Send a connection request
+                on
+                LinkedIn and take a peak at my
+                Github!
+            </p>
+            <div class="flex flex-row justify-evenly my-10">
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/brandonbisceglia/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt=""
+                        class="w-20 h-20 md:w-24 md:h-24 hover:scale-125 duration-200">
+                </a>
+                <!-- Github Icon -->
+                <a href="#">
+                    <img src="images/github.svg" alt="" class="w-20 h-20 md:w-24 md:h-24 hover:scale-125 duration-200">
+                </a>
 
-    <footer class="mt-40">
-
+            </div>
+        </section>
     </footer>
 
     <script type="module" src="/js/bundle.js"></script>
