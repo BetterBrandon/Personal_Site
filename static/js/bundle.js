@@ -14795,12 +14795,14 @@ frame_button.addEventListener("click", function () {
 window.onload = () => {
   c.createLanguageChart();
   skills_area.innerText = "Java, CSS";
+  // Have to run the reveal function at load to get all the elements intiali distances from
+  // the top of the page
   reveal();
 };
 
 },{"./MyChart.js":6}],6:[function(require,module,exports){
 const Chart = require("chart.js/auto");
-Chart.defaults.font.size = 16;
+Chart.defaults.font.size = 18;
 Chart.defaults.backgroundColor = "#fca311";
 // Chart.defaults.color = "#fca311";
 
@@ -14863,7 +14865,15 @@ class MyChart {
             // I can remove title since I can just add it myself as a h1
             display: false,
           },
-          legend: {},
+          legend: {
+            labels: {
+              font: {
+                size: 28,
+                family: "'Raleway', 'sans-serif'",
+                weight: "900",
+              },
+            },
+          },
 
           tooltip: {
             enabled: false,
