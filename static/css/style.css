@@ -581,6 +581,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -809,6 +813,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-24 {
     height: 6rem;
   }

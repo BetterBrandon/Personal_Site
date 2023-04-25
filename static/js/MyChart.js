@@ -1,5 +1,7 @@
 const Chart = require("chart.js/auto");
 Chart.defaults.font.size = 16;
+Chart.defaults.backgroundColor = "#fca311";
+// Chart.defaults.color = "#fca311";
 
 class MyChart {
   #is_language_chart = true;
@@ -15,6 +17,9 @@ class MyChart {
     { skill: "Tailwind", value: 51 },
     { skill: "Express", value: 45 },
     { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
   ];
 
   #data_language_data = {
@@ -23,6 +28,7 @@ class MyChart {
       {
         label: "Programming Languages",
         data: this.#data_languages.map((row) => row.value),
+        backgroundColor: "#fca311",
       },
     ],
   };
@@ -33,6 +39,7 @@ class MyChart {
       {
         label: "Frameworks / Libraries",
         data: this.#data_frame.map((row) => row.value),
+        backgroundColor: "#fca311",
       },
     ],
   };

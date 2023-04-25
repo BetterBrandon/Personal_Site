@@ -14750,40 +14750,39 @@ exports.valueOrDefault = valueOrDefault;
 
 
 },{"@kurkle/color":1}],5:[function(require,module,exports){
-// const { Test } = require("./test");
-// Test.print();
-// Chart.defaults.font.size = 16;
-
-const Test = require("./test.js");
-const t = new Test();
-t.print();
-
+// Instantiate chart class
 const MyChart = require("./MyChart.js");
 const c = new MyChart();
 
+// Get the chart buttons from index.ejs
 const language_button = document.getElementById("languages");
 const frame_button = document.getElementById("frame");
+const skills_area = document.getElementById("skills-area");
 
+// Langauge Button
 language_button.addEventListener("click", function () {
-  console.log("Clicked the language button");
-
-  t.print();
   c.createLanguageChart();
+  skills_area.innerText = "Java, CSS";
 });
 
+// Frame Button
 frame_button.addEventListener("click", function () {
   c.createFrameChart();
+  skills_area.innerText = "Node.JS, Tailwind, MongoDB, Axios";
 });
 
 console.log("Script is working");
 
+// When window is loaded, by default have the pragramming langauges chart show
 window.onload = () => {
   c.createLanguageChart();
 };
 
-},{"./MyChart.js":6,"./test.js":8}],6:[function(require,module,exports){
+},{"./MyChart.js":6}],6:[function(require,module,exports){
 const Chart = require("chart.js/auto");
 Chart.defaults.font.size = 16;
+Chart.defaults.backgroundColor = "#fca311";
+// Chart.defaults.color = "#fca311";
 
 class MyChart {
   #is_language_chart = true;
@@ -14799,6 +14798,9 @@ class MyChart {
     { skill: "Tailwind", value: 51 },
     { skill: "Express", value: 45 },
     { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
+    { skill: "MongoDB", value: 62 },
   ];
 
   #data_language_data = {
@@ -14807,6 +14809,7 @@ class MyChart {
       {
         label: "Programming Languages",
         data: this.#data_languages.map((row) => row.value),
+        backgroundColor: "#fca311",
       },
     ],
   };
@@ -14817,6 +14820,7 @@ class MyChart {
       {
         label: "Frameworks / Libraries",
         data: this.#data_frame.map((row) => row.value),
+        backgroundColor: "#fca311",
       },
     ],
   };
@@ -14922,14 +14926,4 @@ class MyChart {
 }
 module.exports = MyChart;
 
-},{"chart.js/auto":2}],7:[function(require,module,exports){
-class Test {
-  print() {
-    console.log("IF THIS WORKS THEN WE FIXED THE PROBLEM");
-  }
-}
-module.exports = Test;
-
-},{}],8:[function(require,module,exports){
-arguments[4][7][0].apply(exports,arguments)
-},{"dup":7}]},{},[7,6,5]);
+},{"chart.js/auto":2}]},{},[6,5]);
