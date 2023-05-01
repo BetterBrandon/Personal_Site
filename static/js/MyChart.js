@@ -8,18 +8,23 @@ class MyChart {
   #data;
 
   #data_languages = [
-    { skill: "Java", value: 65 },
+    { skill: "Java", value: 55 },
     { skill: "CSS", value: 72 },
+    { skill: "JavaScript", value: 58 },
+    { skill: "HTML", value: 70 },
+    { skill: "Python", value: 22 },
   ];
 
   #data_frame = [
     { skill: "Node.JS", value: 55 },
-    { skill: "Tailwind", value: 51 },
-    { skill: "Express", value: 45 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
+    { skill: "Axios", value: 35 },
+    { skill: "Tailwind", value: 72 },
+    { skill: "Bootstrap", value: 63 },
+    { skill: "Express", value: 48 },
+    { skill: "MongoDB", value: 40 },
+    { skill: "MapBox", value: 32 },
+    { skill: "Chart.js", value: 46 },
+    { skill: "Git", value: 35 },
   ];
 
   #data_language_data = {

@@ -29,20 +29,21 @@ window.addEventListener("scroll", reveal);
 // Langauge Button
 language_button.addEventListener("click", function () {
   c.createLanguageChart();
-  skills_area.innerText = "Java, CSS";
+  skills_area.innerText = "Java, CSS, JavaScript, HTML, Python";
 });
 
 // Frame Button
 frame_button.addEventListener("click", function () {
   c.createFrameChart();
-  skills_area.innerText = "Node.JS, Tailwind, MongoDB, Axios";
+  skills_area.innerText =
+    "Node.JS, Axios, Tailwind, Bootstrap, Express, MongoDB, MapBox, Chart.js, Git";
 });
 
 // When window is loaded, by default have the pragramming langauges chart show
 // On mobile, will just display text showing programming languages
 window.onload = () => {
   c.createLanguageChart();
-  skills_area.innerText = "Java, CSS";
+  skills_area.innerText = "Java, CSS, JavaScript, HTML, Python";
   // Have to run the reveal function at load to get all the elements intiali distances from
   // the top of the page
   reveal();

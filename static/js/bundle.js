@@ -14781,20 +14781,21 @@ window.addEventListener("scroll", reveal);
 // Langauge Button
 language_button.addEventListener("click", function () {
   c.createLanguageChart();
-  skills_area.innerText = "Java, CSS";
+  skills_area.innerText = "Java, CSS, JavaScript, HTML, Python";
 });
 
 // Frame Button
 frame_button.addEventListener("click", function () {
   c.createFrameChart();
-  skills_area.innerText = "Node.JS, Tailwind, MongoDB, Axios";
+  skills_area.innerText =
+    "Node.JS, Axios, Tailwind, Bootstrap, Express, MongoDB, MapBox, Chart.js, Git";
 });
 
 // When window is loaded, by default have the pragramming langauges chart show
 // On mobile, will just display text showing programming languages
 window.onload = () => {
   c.createLanguageChart();
-  skills_area.innerText = "Java, CSS";
+  skills_area.innerText = "Java, CSS, JavaScript, HTML, Python";
   // Have to run the reveal function at load to get all the elements intiali distances from
   // the top of the page
   reveal();
@@ -14811,18 +14812,23 @@ class MyChart {
   #data;
 
   #data_languages = [
-    { skill: "Java", value: 65 },
+    { skill: "Java", value: 55 },
     { skill: "CSS", value: 72 },
+    { skill: "JavaScript", value: 58 },
+    { skill: "HTML", value: 70 },
+    { skill: "Python", value: 22 },
   ];
 
   #data_frame = [
     { skill: "Node.JS", value: 55 },
-    { skill: "Tailwind", value: 51 },
-    { skill: "Express", value: 45 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
-    { skill: "MongoDB", value: 62 },
+    { skill: "Axios", value: 35 },
+    { skill: "Tailwind", value: 72 },
+    { skill: "Bootstrap", value: 63 },
+    { skill: "Express", value: 48 },
+    { skill: "MongoDB", value: 40 },
+    { skill: "MapBox", value: 32 },
+    { skill: "Chart.js", value: 46 },
+    { skill: "Git", value: 35 },
   ];
 
   #data_language_data = {
