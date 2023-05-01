@@ -817,9 +817,29 @@ body {
   background-color: rgb(252 163 17 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .hover\:text-navy:hover {
   --tw-text-opacity: 1;
   color: rgb(44 64 109 / var(--tw-text-opacity));
+}
+
+.hover\:text-orange-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-2xl:hover {
@@ -850,6 +870,10 @@ body {
     height: 6rem;
   }
 
+  .md\:h-\[700px\] {
+    height: 700px;
+  }
+
   .md\:w-24 {
     width: 6rem;
   }
@@ -867,19 +891,14 @@ body {
     padding-right: 2.5rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-xl {

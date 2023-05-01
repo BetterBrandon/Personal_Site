@@ -39,7 +39,7 @@
             Who is <span class="italic">Brandon Bisceglia</span>?
         </h1>
         <!-- About me - text -->
-        <p class="font-bold text-lg md:text-2xl my-5 reveal">I am recently married to my beautiful wife, and we have
+        <p class="font-bold text-lg md:text-2xl my-5 reveal">I am recently married to my beautiful wife, where we have
             been together
             since high school. I was born and raised in Pittsburgh, Pennsylvania, which allowed me to see our city’s
             transformation firsthand. Once powered by steel to, it now becoming a tech, medical, and, most importantly,
@@ -220,10 +220,11 @@
 
         </div>
         <!-- Chart -->
-        <!-- style="width: 800px;" -->
+        <!-- When on screens larger than mobile, charts will display -->
         <div class="mx-auto mt-20 hidden md:block reveal">
-            <canvas id="chart" class="w-full"></canvas>
+            <canvas id="chart" class="w-full md:h-[700px]"></canvas>
         </div>
+        <!-- On mobile sized screens, my skills will be displayed via text -->
         <div class="md:hidden text-center mx-auto reveal">
             <p id="skills-area" class="text-2xl"></p>
         </div>
@@ -233,8 +234,6 @@
     <!-- 
         TODO:  
         - Add resume to resume icon
-        - Have github icon go to my gitpage
-        - Add Yelpcamp into text
     -->
     <footer class="mt-40 pb-20 reveal">
         <section class="max-w-7xl mx-auto md:px-10 text-center border-black border-4 border-solid px-0">
@@ -246,8 +245,9 @@
                 on that. The only thing I am looking for right now is the next opportunity. I will be appreciative of
                 anyone that can help with that process. Let’s connect on LinkedIn! Take a look at my featured project
                 site, <a href="https://boiling-reef-77260.herokuapp.com/" target="_blank"><span
-                        class="text-yellowOrange">YelpCamp!</span></a> Explore my Github, and feel
-                free to take a copy of my resume!
+                        class="text-yellowOrange hover:text-navy duration-200">YelpCamp!</span></a> Explore my
+                Github,
+                and feel free to take a copy of my resume!
             </p>
             <div class="flex flex-row justify-evenly my-10">
                 <!-- LinkedIn Icon -->
