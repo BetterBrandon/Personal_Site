@@ -3,6 +3,9 @@ module.exports = {
   content: ["./views/*.ejs"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "2200px",
+      },
       fontFamily: {
         sans: ["Raleway", "sans-serif"],
       },
