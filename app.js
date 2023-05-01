@@ -13,6 +13,11 @@ app.get("/", (request, response) => {
   response.render("index");
 });
 
+app.all("*", (request, response, next) => {
+  response.status(404);
+  response.render("not_found");
+});
+
 app.listen(3000, () => {
   console.log("Listening on 3000");
 });
