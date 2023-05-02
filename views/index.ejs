@@ -15,20 +15,18 @@
 </head>
 
 <body>
-    <!-- FIXME: Add Image that I want,-->
+    <!-- Header -->
     <header class="lg:mx-auto">
-
         <picture>
-            <!-- <source media="(min-width: 650px)" srcset="images/Main_pic.jpg"> -->
+            <!-- For mobile and tablet, the mobile_pic will be used -->
             <source media="(max-width: 950px)" srcset="images/main/main_pic_mobile.jpg">
+            <!-- For screen sizes larger than 950px, the larger image will be used -->
             <img src=" images/main/Main_pic.jpg" alt="" class="relative h-screen w-full 3xl:max-w-7xl 3xl:mx-auto">
         </picture>
+        <!-- Header - text -->
         <section class="  text-white text-center header-text-center bottom-1/3 md:top-1/2">
-            <!-- text-2xl -->
             <p class="font-bold text-2xl md:text-4xl">Hey there, my name is</p>
-            <h1 class=" text-7xl md:text-8x font-black italic">
-                Brandon Bisceglia
-            </h1>
+            <h1 class=" text-7xl md:text-8x font-black italic">Brandon Bisceglia</h1>
         </section>
     </header>
 
@@ -62,7 +60,6 @@
     <section class="section-container mt-24">
         <h1 class="font-bold text-4xl my-5 underline underline-offset-8 reveal">Experiences</h1>
         <!-- Argo AI -->
-        <!-- If don't like the logo in the center, can change the location of it -->
         <div class="responsive-flex  items-center mt-10 mb-20 reveal w-full ">
             <div class=" lg:w-1/5 flex flex-row justify-evenly items-center md:flex-col">
                 <!-- Job Location and Logo -->
@@ -75,7 +72,7 @@
                     </p>
                 </div>
             </div>
-
+            <!-- Job text -->
             <div class="text-lg md:text-xl tracking-tight reveal lg:w-4/5">
                 <p>
                     As we all know, graduating in April of 2020 was not an ideal time. The pandemic started
@@ -112,6 +109,7 @@
         <!-- AHN -->
         <div class=" responsive-flex items-center my-20 reveal">
             <div class="lg:w-1/5 flex flex-row justify-evenly items-center md:flex-col">
+                <!-- Location & Logo -->
                 <div class="flex flex-col content-center">
                     <img src=" images/logos/AHN_icon.png" alt="Allegheny Health Network" class="w-72 mx-auto">
                     <!-- <h3 class="font-bold text-2xl my-3 text-yellowOrange">Allgheny Health Network</h3> -->
@@ -121,7 +119,7 @@
                     </p>
                 </div>
             </div>
-
+            <!-- Job text -->
             <div class="text-lg md:text-xl tracking-tight reveal lg:w-4/5">
                 <p>
                     Being selected as the first intern at AHN’s IT Department was an honor I wasn’t expecting.
@@ -149,6 +147,7 @@
         <!-- Pitt -->
         <div class=" responsive-flex items-center my-20 reveal">
             <div class="lg:w-1/5 flex flex-row justify-evenly items-center md:flex-col">
+                <!-- Location & Logo -->
                 <div class="flex flex-col content-center">
                     <img src=" images/logos/Pitt.png" alt="University of Pittsburgh" class="w-40 mx-auto">
                     <!-- <h3 class="font-bold text-2xl my-3 text-yellowOrange">Allgheny Health Network</h3> -->
@@ -158,7 +157,7 @@
                     </p>
                 </div>
             </div>
-
+            <!-- Pitt text -->
             <div class="text-lg md:text-xl tracking-tight reveal lg:w-4/5">
                 <p>
                     Being born and raised in Pittsburgh and having older relatives that attended the University of
@@ -200,7 +199,7 @@
     <!-- Skills  -->
     <section class="section-container">
         <h1 class="font-bold text-4xl my-5 underline underline-offset-8 reveal">Skills</h1>
-        <!-- Creating the chart -->
+        <!-- Button area -->
         <div class="responsive-flex md:justify-evenly my-10 reveal">
 
             <!-- Languages Button -->
@@ -231,12 +230,9 @@
     </section>
 
     <!-- Footer -->
-    <!-- 
-        TODO:  
-        - Add resume to resume icon
-    -->
     <footer class="mt-40 pb-20 reveal">
         <section class="max-w-7xl mx-auto md:px-10 text-center border-black border-4 border-solid px-0">
+            <!-- Footer text -->
             <p class="text-center text-lg md:text-xl mt-10 px-2">
                 If you have made it this far, thank you for your time in reading
                 this short bio on myself. I wouldn’t call myself an underdog, but I have had to work hard for where I am
