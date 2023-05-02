@@ -594,6 +594,10 @@ video {
   display: flex;
 }
 
+.list-item {
+  display: list-item;
+}
+
 .hidden {
   display: none;
 }
@@ -628,6 +632,10 @@ video {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
