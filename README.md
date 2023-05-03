@@ -10,7 +10,7 @@ My site is driven with **Node.js** for the backend, with **Express** handling th
 
 In addition, I thought it would be an excellent idea to have a chart of some kind that would be able to showcase my skills. A more presentational approach, rather than having them listed out. (I have them bullet-pointed on mobile due to the illegible graph on small screen sizes.) That is where **Chart.js** comes into play. Chart.js is a powerful javascript library where you can create many charts and graphs, which also allows customization in numerous ways. I will utilize this library in the future if any project needs data to be showcased.
 
-### Thank you for reading the above. You can visit the [site](www.brandonbisceglia.com) here if you haven't already!
+### Thank you for reading the above. You can visit the [site](https://www.brandonbisceglia.com/) here if you haven't already!
 
 <br>
 
