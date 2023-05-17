@@ -28,7 +28,14 @@ window.addEventListener("scroll", reveal);
 
 function language_skills_area() {
   skills_area.innerHTML = "";
-  const language_skills = ["Java", "CSS", "JavaScript", "HTML", "Python"];
+  const language_skills = [
+    "Java",
+    "CSS",
+    "JavaScript",
+    "HTML",
+    "Python",
+    "SQL",
+  ];
   for (let skill of language_skills) {
     let new_li = document.createElement("li");
     new_li.innerText = skill;

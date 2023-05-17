@@ -13,6 +13,7 @@ class MyChart {
     { skill: "JavaScript", value: 58 },
     { skill: "HTML", value: 70 },
     { skill: "Python", value: 22 },
+    { skill: "SQL", value: 34 },
   ];
 
   #data_frame = [
